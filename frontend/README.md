@@ -1,16 +1,53 @@
-# React + Vite
+# Nutrify - AI BMI And Diet Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nutrify is a React app that calculates BMI, shows weight recommendations, and generates an AI-powered diet plan based on your profile.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://nutrify-kappa.vercel.app/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- BMI calculator with metric and imperial support
+- BMI category and animated scale marker
+- Weight recommendation cards
+- AI diet plan generation via Groq API
+- Dark, responsive UI
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Groq API
+
+## Local Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create or update `.env`:
+
+```env
+VITE_GROQ_API_KEY=gsk_your_groq_api_key_here
+VITE_GROQ_MODEL=llama-3.3-70b-versatile
+```
+
+3. Start development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## Notes
+
+- Restart the dev server after changing `.env`.
+- Do not commit real API keys.
